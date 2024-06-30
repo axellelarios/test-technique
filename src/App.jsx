@@ -29,13 +29,13 @@ function App() {
 
               { 
                 movie.actors? 
-                  movie.actors?.map((actor, index) => { 
+                  movie.actors.map((actor, index) => { 
                     return (
                     <div key={index} style={{backgroundImage: "url(" + actor.picture + ")"}}>
                       <h3>{actor.name}</h3>
                     </div> 
                   )}) 
-                : <div className='no-result'> Cliquez sur un film </div>
+                : <div className='no-result'> Choississez sur un film </div>
               }
            
               </div>
